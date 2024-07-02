@@ -187,7 +187,12 @@ header {
   background-color: #007bff;
 }
 
+
 /* Write your CSS below */
+
+.navicon {
+  display: none;
+}
 
 @media screen and (max-width:760px) {
   .navbar {
@@ -224,6 +229,10 @@ header {
     width: auto;
   }
 
+  .navicon {
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 760px) and (max-width: 1024px) {
@@ -240,7 +249,7 @@ header {
   }
 
   .article {
-    width: 45%;
+    width: 100%;
     margin: 10px;
   }
 
@@ -248,4 +257,23 @@ header {
     padding: 20px 0;
   }
 
+  .navicon {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  .newspaper-name {
+    border-bottom: 0;
+  }
+
+  .navicon {
+    display: flex;
+    margin: 0 auto;
+  }
 }
